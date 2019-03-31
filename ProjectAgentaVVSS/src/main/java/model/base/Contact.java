@@ -2,27 +2,57 @@ package model.base;
 
 import exceptions.InvalidFormatException;
 
+import javax.mail.internet.AddressException;
+import javax.mail.internet.InternetAddress;
+
 public class Contact {
 	private String Name;
 	private String Email;
 	private String Telefon;
-	
+	private String Address;
+
 	public Contact(){
 		Name = "";
 		Email = "";
 		Telefon = "";
+		Address = "";
 	}
 	
-	public Contact(String name, String address, String telefon) throws InvalidFormatException{
+	public Contact(String name, String address, String telefon, String email) throws InvalidFormatException{
+		if (name.length() == 0)
+			throw new InvalidFormatException("Cannot convert", "Error message - Empty name");
+
+		if (email.length() == 0)
+			throw new InvalidFormatException("Cannot convert", "Error message - Empty email");
+
+		if (name.length() < 5 || name.length() > 150)
+			throw new InvalidFormatException("Cannot convert", "Error message - Name length error");
+
+		if (email.length() < 10 || email.length() > 100)
+			throw new InvalidFormatException("Cannot convert", "Error message - Email length error");
+
 		if (!validTelefon(telefon)) throw new InvalidFormatException("Cannot convert", "Invalid phone number");
 		if (!validName(name)) throw new InvalidFormatException("Cannot convert", "Invalid name");
 		if (!validAddress(address)) throw new InvalidFormatException("Cannot convert", "Invalid address");
+		if (!validEmail(email)) throw new InvalidFormatException("Cannot convert", "Error message - Incorect email");
 		Name = name;
-		Email = address;
+        Address = address;
 		Telefon = telefon;
+		Email = email;
 	}
 
-	public String getName() {
+    private boolean validEmail(String email) {
+        boolean result = true;
+        try {
+            InternetAddress emailAddr = new InternetAddress(email);
+            emailAddr.validate();
+        } catch (AddressException ex) {
+            result = false;
+        }
+        return result;
+    }
+
+    public String getName() {
 		return Name;
 	}
 
@@ -56,8 +86,9 @@ public class Contact {
 		if (!validTelefon(s[2])) throw new InvalidFormatException("Cannot convert", "Invalid phone number");
 		if (!validName(s[0])) throw new InvalidFormatException("Cannot convert", "Invalid name");
 		if (!validAddress(s[1])) throw new InvalidFormatException("Cannot convert", "Invalid address");
-		
-		return new Contact(s[0], s[1], s[2]);
+		if (!validAddress(s[3])) throw new InvalidFormatException("Cannot convert", "Invalid email");
+
+		return new Contact(s[0], s[1], s[2], s[3]);
 	}
 	
 	@Override
@@ -65,7 +96,7 @@ public class Contact {
 		StringBuilder sb = new StringBuilder();
 		sb.append(Name);
 		sb.append(" ");
-		sb.append(Email);
+		sb.append(Address);
 		sb.append(" ");
 		sb.append(Telefon);
 		sb.append(" ");

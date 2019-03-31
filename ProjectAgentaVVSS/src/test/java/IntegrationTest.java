@@ -39,7 +39,7 @@ public class IntegrationTest {
 		int n = repCon.count();
 
 		try {
-			Contact c = new Contact("name", "address1", "+071122334455");
+			Contact c = new Contact("name", "address1", "+071122334455", "alex@user.com");
 			repCon.addContact(c);
 		} catch (InvalidFormatException e) {
 			e.printStackTrace();
@@ -156,7 +156,7 @@ public class IntegrationTest {
 		int n = repCon.count();
 
 		try {
-			Contact c = new Contact("name", "address1", "+071122334455");
+			Contact c = new Contact("name", "address1", "+071122334455", "alex@user.com");
 			repCon.addContact(c);
 		} catch (InvalidFormatException e) {
 			e.printStackTrace();
@@ -220,7 +220,7 @@ public class IntegrationTest {
 		int n = repCon.count();
 
 		try {
-			Contact c = new Contact("name", "address1", "+071122334455");
+			Contact c = new Contact("name", "address1", "+071122334455", "alex@user.com");
 			repCon.addContact(c);
 		} catch (InvalidFormatException e) {
 			e.printStackTrace();
@@ -257,7 +257,7 @@ public class IntegrationTest {
 		int n = repCon.count();
 
 		try {
-			Contact c = new Contact("name", "address1", "+071122334455");
+			Contact c = new Contact("name", "address1", "+071122334455", "alex@user.com");
 			repCon.addContact(c);
 		} catch (InvalidFormatException e) {
 			e.printStackTrace();

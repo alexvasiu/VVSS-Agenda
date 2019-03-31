@@ -165,8 +165,10 @@ public class MainClass {
 			String adress = in.readLine();
 			System.out.printf("Numar de telefon: ");
 			String telefon = in.readLine();
+			System.out.printf("Email: ");
+			String email = in.readLine();
 
-			Contact c = new Contact(name, adress, telefon);
+			Contact c = new Contact(name, adress, telefon, email);
 
 			contactRep.addContact(c);
 			System.out.printf("S-a adugat cu succes\n");
