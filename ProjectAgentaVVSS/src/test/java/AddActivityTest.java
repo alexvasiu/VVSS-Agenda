@@ -1,6 +1,3 @@
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -11,6 +8,8 @@ import model.repository.interfaces.RepositoryActivity;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class AddActivityTest {
 	private Activity act;
@@ -56,7 +55,7 @@ public class AddActivityTest {
 		}
 		catch(Exception e){}	
 		int c = rep.count();
-		assertTrue( c == 2);
+		assertEquals(1, c);
 		for (Activity a : rep.getActivities())
 			rep.removeActivity(a);
 	}
@@ -109,8 +108,8 @@ public class AddActivityTest {
 					"Lunch break");
 			assertFalse(rep.addActivity(act));			
 		}
-		catch(Exception e){}	
-		assertTrue( 2 == rep.count());
+		catch(Exception e){}
+		assertEquals(1, rep.count());
 		for (Activity a : rep.getActivities())
 			rep.removeActivity(a);
 	}
@@ -134,5 +133,68 @@ public class AddActivityTest {
 		assertTrue( 1 == rep.count());
 		for (Activity a : rep.getActivities())
 			rep.removeActivity(a);
+	}
+
+	@Test
+	public void testWBT1() {
+		DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+		for (Activity a : rep.getActivities())
+			rep.removeActivity(a);
+
+		try {
+			act = new Activity(1, df.parse("03/20/2013 12:00"), df.parse("03/20/2013 13:00"), "name1",
+					null,
+					"Lunch break");
+
+			assertTrue(rep.addActivity(act));
+			for (Activity a : rep.getActivities())
+				rep.removeActivity(a);
+		} catch (ParseException ignore) {
+			fail();
+		}
+	}
+
+	@Test
+	public void testWBT2() {
+		DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+		for (Activity a : rep.getActivities())
+			rep.removeActivity(a);
+
+		try {
+			act = new Activity(1, df.parse("03/20/2013 12:00"), df.parse("03/20/2013 13:00"), "name1",
+					null,
+					"Lunch break");
+
+			rep.addActivity(act);
+			act.setName("dddd");
+			assertFalse(rep.addActivity(act));
+			for (Activity a : rep.getActivities())
+				rep.removeActivity(a);
+		} catch (ParseException ignore) {
+			fail();
+		}
+	}
+	@Test
+	public void testWBT3() {
+		DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+		for (Activity a : rep.getActivities())
+			rep.removeActivity(a);
+
+		try {
+			act = new Activity(1, df.parse("03/20/2013 12:00"), df.parse("03/20/2013 13:00"), "name1",
+					null,
+					"Lunch break");
+
+			rep.addActivity(act);
+
+			act.setStart(df.parse("03/20/2019 12:00"));
+			act.setDuration(df.parse("03/20/2019 13:00"));
+			act.setName("name");
+			assertFalse(rep.addActivity(act));
+			for (Activity a : rep.getActivities())
+				rep.removeActivity(a);
+		} catch (ParseException ignore) {
+			fail();
+		}
 	}
 }

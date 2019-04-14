@@ -1,0 +1,208 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Activity</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">model.base</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Activity (model.base)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Activity</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    53.3%
+  </span>
+  <span class="absValue">
+    (8/ 15)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    36.9%
+  </span>
+  <span class="absValue">
+    (24/ 65)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package model.base;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import java.util.Date;
+<i>4</i>&nbsp;import java.util.LinkedList;
+<i>5</i>&nbsp;import java.util.List;
+<i>6</i>&nbsp;
+<i>7</i>&nbsp;import model.repository.interfaces.RepositoryContact;
+<i>8</i>&nbsp;
+<i>9</i>&nbsp;public class Activity {
+<i>10</i>&nbsp;    private Integer IdActivitate;
+<i>11</i>&nbsp;	private String name;
+<i>12</i>&nbsp;	private Date start;
+<i>13</i>&nbsp;	private Date duration;
+<i>14</i>&nbsp;	private List&lt;Contact&gt; contacts;
+<i>15</i>&nbsp;	private String description;
+<i>16</i>&nbsp;	
+<i>17</i>&nbsp;	public Activity(Integer idActivitate, Date start, Date end, String name, List&lt;Contact&gt; contacts,
+<b class="fc"><i>18</i>&nbsp;                    String description) {</b>
+<b class="fc"><i>19</i>&nbsp;        this.IdActivitate = idActivitate;</b>
+<b class="fc"><i>20</i>&nbsp;        this.name = name;</b>
+<b class="fc"><i>21</i>&nbsp;		this.description = description;</b>
+<b class="fc"><i>22</i>&nbsp;		if (contacts == null)</b>
+<b class="fc"><i>23</i>&nbsp;			this.contacts = new LinkedList&lt;Contact&gt;();</b>
+<i>24</i>&nbsp;		else
+<b class="nc"><i>25</i>&nbsp;			this.contacts = new LinkedList&lt;Contact&gt;(contacts);</b>
+<i>26</i>&nbsp;
+<b class="fc"><i>27</i>&nbsp;		this.start = new Date();</b>
+<b class="fc"><i>28</i>&nbsp;		this.start.setTime(start.getTime());</b>
+<b class="fc"><i>29</i>&nbsp;		this.duration = new Date();</b>
+<b class="fc"><i>30</i>&nbsp;		this.duration.setTime(end.getTime());</b>
+<b class="fc"><i>31</i>&nbsp;	}</b>
+<i>32</i>&nbsp;
+<i>33</i>&nbsp;	public String getName() {
+<b class="fc"><i>34</i>&nbsp;		return name;</b>
+<i>35</i>&nbsp;	}
+<b class="fc"><i>36</i>&nbsp;	public void setName(String name) {this.name = name;}</b>
+<i>37</i>&nbsp;
+<i>38</i>&nbsp;	public Date getStart() {
+<b class="fc"><i>39</i>&nbsp;		return start;</b>
+<i>40</i>&nbsp;	}
+<i>41</i>&nbsp;
+<i>42</i>&nbsp;	public void setStart(Date start) {
+<b class="fc"><i>43</i>&nbsp;		this.start = start;</b>
+<b class="fc"><i>44</i>&nbsp;	}</b>
+<i>45</i>&nbsp;
+<i>46</i>&nbsp;	public Date getDuration() {
+<b class="fc"><i>47</i>&nbsp;		return duration;</b>
+<i>48</i>&nbsp;	}
+<i>49</i>&nbsp;
+<i>50</i>&nbsp;	public void setDuration(Date duration) {
+<b class="fc"><i>51</i>&nbsp;		this.duration = duration;</b>
+<b class="fc"><i>52</i>&nbsp;	}</b>
+<i>53</i>&nbsp;
+<i>54</i>&nbsp;	public List&lt;Contact&gt; getContacts() {
+<b class="nc"><i>55</i>&nbsp;		return contacts;</b>
+<i>56</i>&nbsp;	}
+<i>57</i>&nbsp;
+<i>58</i>&nbsp;	public void setContacts(List&lt;Contact&gt; contacts) {
+<b class="nc"><i>59</i>&nbsp;		this.contacts = contacts;</b>
+<b class="nc"><i>60</i>&nbsp;	}</b>
+<i>61</i>&nbsp;
+<i>62</i>&nbsp;	public String getDescription() {
+<b class="nc"><i>63</i>&nbsp;		return description;</b>
+<i>64</i>&nbsp;	}
+<i>65</i>&nbsp;
+<i>66</i>&nbsp;	public void setDescription(String description) {
+<b class="nc"><i>67</i>&nbsp;		this.description = description;</b>
+<b class="nc"><i>68</i>&nbsp;	}</b>
+<i>69</i>&nbsp;
+<i>70</i>&nbsp;	@Override
+<i>71</i>&nbsp;	public boolean equals(Object obj) {
+<b class="fc"><i>72</i>&nbsp;		if (!(obj instanceof Activity))</b>
+<b class="nc"><i>73</i>&nbsp;			return false;</b>
+<b class="fc"><i>74</i>&nbsp;		Activity act = (Activity) obj;</b>
+<b class="fc"><i>75</i>&nbsp;		if (act.description.equals(description) &amp;&amp; start.equals(act.start)</b>
+<b class="fc"><i>76</i>&nbsp;				&amp;&amp; duration.equals(act.duration) &amp;&amp; name.equals(act.name))</b>
+<b class="fc"><i>77</i>&nbsp;			return true;</b>
+<b class="nc"><i>78</i>&nbsp;		return false;</b>
+<i>79</i>&nbsp;	}
+<i>80</i>&nbsp;
+<i>81</i>&nbsp;	public boolean intersect(Activity act) {
+<b class="nc"><i>82</i>&nbsp;		if (start.compareTo(act.duration) &lt; 0</b>
+<b class="nc"><i>83</i>&nbsp;				&amp;&amp; act.start.compareTo(duration) &lt; 0)</b>
+<b class="nc"><i>84</i>&nbsp;			return true;</b>
+<b class="nc"><i>85</i>&nbsp;		return false;</b>
+<i>86</i>&nbsp;	}
+<i>87</i>&nbsp;
+<i>88</i>&nbsp;	@Override
+<i>89</i>&nbsp;	public String toString() {
+<b class="nc"><i>90</i>&nbsp;		StringBuilder sb = new StringBuilder();</b>
+<b class="nc"><i>91</i>&nbsp;		sb.append(IdActivitate);</b>
+<b class="nc"><i>92</i>&nbsp;		sb.append(&quot;#&quot;);</b>
+<b class="nc"><i>93</i>&nbsp;		sb.append(name);</b>
+<b class="nc"><i>94</i>&nbsp;		sb.append(&quot;#&quot;);</b>
+<b class="nc"><i>95</i>&nbsp;		sb.append(start.getTime());</b>
+<b class="nc"><i>96</i>&nbsp;		sb.append(&quot;#&quot;);</b>
+<b class="nc"><i>97</i>&nbsp;		sb.append(duration.getTime());</b>
+<b class="nc"><i>98</i>&nbsp;		sb.append(&quot;#&quot;);</b>
+<b class="nc"><i>99</i>&nbsp;		sb.append(description);</b>
+<b class="nc"><i>100</i>&nbsp;		sb.append(&quot;#&quot;);</b>
+<b class="nc"><i>101</i>&nbsp;		for (Contact c : contacts) {</b>
+<b class="nc"><i>102</i>&nbsp;			sb.append(&quot;#&quot;);</b>
+<b class="nc"><i>103</i>&nbsp;			sb.append(c.getName());</b>
+<b class="nc"><i>104</i>&nbsp;		}</b>
+<b class="nc"><i>105</i>&nbsp;		return sb.toString();</b>
+<i>106</i>&nbsp;	}
+<i>107</i>&nbsp;
+<i>108</i>&nbsp;	public static Activity fromString(String line, RepositoryContact repcon) {
+<i>109</i>&nbsp;		try {
+<b class="nc"><i>110</i>&nbsp;			String[] str = line.split(&quot;#&quot;);</b>
+<b class="nc"><i>111</i>&nbsp;			Integer idActivitate = Integer.parseInt(str[0]);</b>
+<b class="nc"><i>112</i>&nbsp;			String name = str[1];</b>
+<b class="nc"><i>113</i>&nbsp;			Date start = new Date(Long.parseLong(str[2]));</b>
+<b class="nc"><i>114</i>&nbsp;			Date duration = new Date(Long.parseLong(str[3]));</b>
+<b class="nc"><i>115</i>&nbsp;			String description = str[4];</b>
+<b class="nc"><i>116</i>&nbsp;			List&lt;Contact&gt; conts = new LinkedList&lt;Contact&gt;();</b>
+<b class="nc"><i>117</i>&nbsp;			for (int i = 5; i &lt; str.length; i++) {</b>
+<b class="nc"><i>118</i>&nbsp;				conts.add(repcon.getByName(str[i]));</b>
+<i>119</i>&nbsp;			}
+<b class="nc"><i>120</i>&nbsp;			return new Activity(idActivitate, start, duration, name, conts, description);</b>
+<b class="nc"><i>121</i>&nbsp;		} catch (Exception e) {</b>
+<b class="nc"><i>122</i>&nbsp;			return null;</b>
+<i>123</i>&nbsp;		}
+<i>124</i>&nbsp;	}
+<i>125</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2019-04-15 01:00</div>
+</div>
+</body>
+</html>

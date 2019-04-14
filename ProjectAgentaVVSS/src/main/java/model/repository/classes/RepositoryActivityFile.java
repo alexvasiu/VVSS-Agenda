@@ -53,12 +53,15 @@ public class RepositoryActivityFile implements RepositoryActivity{
 	public boolean addActivity(Activity activity) {
 		int  i = 0;
 		boolean conflicts = false;
-		
+
 		while( i < activities.size() )
 		{
 			if ( activities.get(i).getStart().compareTo(activity.getDuration()) < 0 &&
 					activity.getStart().compareTo(activities.get(i).getDuration()) < 0 )
 				conflicts = true;
+			else
+				if (activities.get(i).getName().contains(activity.getName()))
+					conflicts = true;
 			i++;
 		}
 		if ( !conflicts )
@@ -67,14 +70,6 @@ public class RepositoryActivityFile implements RepositoryActivity{
 			return true;
 		}
 		return false;
-//		for (int i = 0; i< activities.size(); i++)
-//		{
-//			if (activity.intersect(activities.get(i))) return false;
-//		}	
-//		int index = activities.indexOf(activity);
-//		//if (index >= 0 ) return false;
-//		activities.add(activity);
-//		return true;
 	}
 
 	@Override
