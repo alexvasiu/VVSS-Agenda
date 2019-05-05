@@ -13,6 +13,5 @@ public interface RepositoryActivity {
 	boolean saveActivities();
 	int count();
 	List<Activity> activitiesByName(String name);
-	List<Activity> activitiesOnDate(String name, Date d);
-	
+	List<Activity> activitiesOnDate(String name, Date d) throws Exception;
 }

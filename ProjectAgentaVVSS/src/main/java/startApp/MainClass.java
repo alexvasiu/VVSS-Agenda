@@ -97,7 +97,8 @@ public class MainClass {
 
 			System.out.println("Activitatile din ziua " + d.toString() + ": ");
 
-			List<Activity> act = activityRep
+			List<Activity> act = null;
+			act = activityRep
 					.activitiesOnDate(user.getName(), d);
 			for (Activity a : act) {
 				System.out.printf("%s - %s: %s - with: ", a.getStart()
@@ -107,7 +108,7 @@ public class MainClass {
 					System.out.printf("%s, ", con.getName());
 				System.out.println();
 			}
-		} catch (IOException e) {
+		} catch (Exception e) {
 			System.out.printf("Eroare de citire: %s\n", e.getMessage());
 		}
 	}

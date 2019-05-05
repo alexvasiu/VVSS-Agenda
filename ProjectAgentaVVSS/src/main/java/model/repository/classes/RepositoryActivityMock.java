@@ -87,19 +87,21 @@ public class RepositoryActivityMock implements RepositoryActivity {
 
 	@Override
 	public List<Activity> activitiesByName(String name) {
-		List<Activity> result = new LinkedList<Activity>();
+		List<Activity> result = new LinkedList<>();
 		for (Activity a : activities)
 			if (a.getName().equals(name)) result.add(a);
 		return result;
 	}
 
 	@Override
-	public List<Activity> activitiesOnDate(String name, Date d) {
-		List<Activity> result = new LinkedList<Activity>();
+	public List<Activity> activitiesOnDate(String name, Date d) throws Exception {
+		name = name.trim();
+		if (name.length() == 0)
+			throw new Exception("Nume gol");
+		List<Activity> result = new LinkedList<>();
 		for (Activity a : activities)
 			if (a.getName().equals(name))
 				if (a.getStart().compareTo(d) <= 0 && d.compareTo(a.getDuration()) <= 0 ) result.add(a);
 		return result;
 	}
-
 }

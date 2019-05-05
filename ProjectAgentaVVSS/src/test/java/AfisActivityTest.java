@@ -17,7 +17,7 @@ import org.junit.Test;
 
 public class AfisActivityTest {
 
-	RepositoryActivity rep;
+	private RepositoryActivity rep;
 
 	@Before
 	public void setUp() throws Exception {
@@ -31,10 +31,10 @@ public class AfisActivityTest {
 			rep.removeActivity(act);
 
 		Calendar c = Calendar.getInstance();
-		c.set(2013, 3 - 1, 20, 12, 00);
+		c.set(2013, Calendar.MARCH, 20, 12, 0);
 		Date start = c.getTime();
 
-		c.set(2013, 3 - 1, 20, 12, 30);
+		c.set(2013, Calendar.MARCH, 20, 12, 30);
 		Date end = c.getTime();
 
 		Activity act = new Activity(1, start, end, "name1",
@@ -42,10 +42,15 @@ public class AfisActivityTest {
 
 		rep.addActivity(act);
 
-		c.set(2013, 3 - 1, 20);
+		c.set(2013, Calendar.MARCH, 20);
 
-		List<Activity> result = rep.activitiesOnDate("name1", c.getTime());
-		assertTrue(result.size() == 1);
+		List<Activity> result = null;
+		try {
+			result = rep.activitiesOnDate("name1", c.getTime());
+		} catch (Exception e) {
+			fail();
+		}
+		assertEquals(1, result.size());
 	}
 
 	@Test
@@ -54,10 +59,10 @@ public class AfisActivityTest {
 			rep.removeActivity(act);
 
 		Calendar c = Calendar.getInstance();
-		c.set(2013, 3 - 1, 20, 12, 00);
+		c.set(2013, Calendar.MARCH, 20, 12, 00);
 		Date start = c.getTime();
 
-		c.set(2013, 3 - 1, 20, 12, 30);
+		c.set(2013, Calendar.MARCH, 20, 12, 30);
 		Date end = c.getTime();
 
 		Activity act = new Activity(1, start, end, "name1",
@@ -65,7 +70,7 @@ public class AfisActivityTest {
 
 		rep.addActivity(act);
 
-		c.set(2013, 3 - 1, 20);
+		c.set(2013, Calendar.MARCH, 20);
 		try {
 			rep.activitiesOnDate(((Object) 1).toString(), c.getTime());
 		} catch (Exception e) {
@@ -94,7 +99,7 @@ public class AfisActivityTest {
 			rep.addActivity((Activity)(Object)1);
 			
 			Calendar c = Calendar.getInstance();
-			c.set(2013, 3 - 1, 20);
+			c.set(2013, Calendar.MARCH, 20);
 			rep.activitiesOnDate("name1", c.getTime());
 		} catch (Exception e) {
 			assertTrue(true);
@@ -107,9 +112,48 @@ public class AfisActivityTest {
 			rep.removeActivity(act);
 	
 		Calendar c = Calendar.getInstance();
-		c.set(2013, 3 - 1, 20);
-		List<Activity> result = rep.activitiesOnDate("name1", c.getTime());
-		
-		assertTrue(result.size() == 0);
+		c.set(2013, Calendar.MARCH, 20);
+		List<Activity> result = null;
+		try {
+			result = rep.activitiesOnDate("name1", c.getTime());
+		} catch (Exception e) {
+			fail();
+		}
+
+		assertEquals(0, result.size());
+	}
+
+
+	@Test
+	public void testUnitValid() {
+		// Black-box valid -> nume un caracter
+
+		for (Activity act : rep.getActivities())
+			rep.removeActivity(act);
+
+		Calendar c = Calendar.getInstance();
+		c.set(2013, Calendar.MARCH, 20);
+		try {
+			List<Activity> result = rep.activitiesOnDate("a", c.getTime());
+			assertEquals(0, result.size());
+		} catch (Exception e) {
+			fail();
+		}
+	}
+
+	@Test
+	public void testUnitInvalid() {
+		// Black-box invalid -> nume empty
+		for (Activity act : rep.getActivities())
+			rep.removeActivity(act);
+
+		Calendar c = Calendar.getInstance();
+		c.set(2013, Calendar.MARCH, 20);
+		try {
+			List<Activity> result = rep.activitiesOnDate("", c.getTime());
+			fail();
+		} catch (Exception e) {
+			assertEquals(e.getMessage(), "Nume gol");
+		}
 	}
 }

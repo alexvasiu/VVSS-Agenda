@@ -30,6 +30,8 @@ public class Activity {
 		this.duration.setTime(end.getTime());
 	}
 
+	public Integer getId() { return IdActivitate;}
+
 	public String getName() {
 		return name;
 	}

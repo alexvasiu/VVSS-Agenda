@@ -127,7 +127,11 @@ public class RepositoryActivityFile implements RepositoryActivity{
 
 	@SuppressWarnings("deprecation")
 	@Override
-	public List<Activity> activitiesOnDate(String name, Date d) {
+	public List<Activity> activitiesOnDate(String name, Date d) throws Exception {
+		name = name.trim();
+		if (name.length() == 0)
+			throw new Exception("Nume gol");
+		List<Activity> result = new LinkedList<>();
 		List<Activity> result1 = new LinkedList<Activity>();
 		for (Activity a : activities)
 			if (a.getName().equals(name))
@@ -137,7 +141,7 @@ public class RepositoryActivityFile implements RepositoryActivity{
 					( a.getDuration().getYear() == d.getYear() && 
 					a.getDuration().getMonth() == d.getMonth() &&
 					a.getDuration().getDate() == d.getDate())) result1.add(a);
-		List<Activity> result = new LinkedList<Activity>();
+		result = new LinkedList<Activity>();
 		while (result1.size() > 0 )
 		{
 			Activity ac = result1.get(0);

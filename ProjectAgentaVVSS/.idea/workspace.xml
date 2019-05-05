@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccd4b16b-298e-4b34-a00a-acc590c2aa35" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/base/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/base/Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryActivityFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryActivityFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryActivityMock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryActivityMock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AddActivityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddActivityTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="ccd4b16b-298e-4b34-a00a-acc590c2aa35" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,70 +37,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryContactMock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="83" selection-start-line="20" selection-start-column="83" selection-end-line="20" selection-end-column="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/base/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/base/Contact.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/InvalidFormatException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
-              <folding>
-                <element signature="e#191#192#0" expanded="true" />
-                <element signature="e#208#209#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryActivityFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="71" column="21" selection-start-line="53" selection-start-column="8" selection-end-line="71" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2456#2457#0" expanded="true" />
-                <element signature="e#2487#2488#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AddActivityTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1887">
-              <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+            <state relative-caret-position="120">
+              <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,10 +49,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryActivityMock.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="54" column="58" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
+            <state relative-caret-position="68">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TopDown.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="129" column="28" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,10 +70,59 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/base/Activity.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/AddContactTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="29" column="41" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="41" />
+            <state relative-caret-position="170">
+              <caret line="109" column="29" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="29" />
+              <folding>
+                <element signature="e#380#381#0" expanded="true" />
+                <element signature="e#420#421#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/BigBang.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="83" column="27" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/AfisActivityTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="140" column="9" lean-forward="true" selection-start-line="130" selection-start-column="8" selection-end-line="140" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RandomString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryActivityMock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1513">
+              <caret line="100" column="51" selection-start-line="97" selection-start-column="8" selection-end-line="100" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,8 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/files/contacts.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="24" selection-start-column="24" selection-end-column="24" />
+            <state relative-caret-position="51">
+              <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -150,8 +142,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryContactFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+            <state relative-caret-position="374">
+              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,6 +163,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>agenda.</find>
+      <find>Email length error</find>
+      <find>rep</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,26 +179,28 @@
         <option value="$PROJECT_DIR$/src/main/java/gui/models/TableModelActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/models/TableModelContact.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/base/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/repository/interfaces/RepositoryActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/repository/interfaces/RepositoryContact.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/repository/interfaces/RepositoryUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryContactFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryUserFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryUserMock.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AfisActivityTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/files/contacts.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/startApp/MainClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryContactMock.java" />
-        <option value="$PROJECT_DIR$/src/test/java/IntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RandomString.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/base/Contact.java" />
         <option value="$PROJECT_DIR$/src/test/java/AddContactTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryActivityFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/base/Activity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryActivityMock.java" />
         <option value="$PROJECT_DIR$/src/test/java/AddActivityTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/repository/interfaces/RepositoryActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryActivityMock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/startApp/MainClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/IntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryActivityFile.java" />
+        <option value="$PROJECT_DIR$/files/contacts.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/AfisActivityTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/base/Activity.java" />
+        <option value="$PROJECT_DIR$/src/test/java/BigBang.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TopDown.java" />
       </list>
     </option>
   </component>
@@ -254,7 +250,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -306,6 +301,16 @@
               <item name="ProjectAgentaVVSS" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjectAgentaVVSS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectAgentaVVSS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectAgentaVVSS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -319,6 +324,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,6 +340,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -351,63 +358,60 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AddActivityTest">
-    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="startApp.MainClass" />
-      <module name="ProjectAgentaVVSS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="startApp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddActivityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TopDown">
+    <configuration name="AfisActivityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectAgentaVVSS" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddActivityTest" />
+      <option name="MAIN_CLASS_NAME" value="AfisActivityTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddActivityTest.testWBT1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BigBang" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectAgentaVVSS" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddActivityTest" />
-      <option name="METHOD_NAME" value="testWBT1" />
+      <option name="MAIN_CLASS_NAME" value="BigBang" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BigBang.testF01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectAgentaVVSS" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BigBang" />
+      <option name="METHOD_NAME" value="testF01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddContactTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectAgentaVVSS" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddContactTest" />
+      <option name="MAIN_CLASS_NAME" value="IntegrationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in ProjectAgentaVVSS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TopDown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectAgentaVVSS" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="TopDown" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AddActivityTest" />
-        <item itemvalue="JUnit.AddActivityTest.testWBT1" />
-        <item itemvalue="JUnit.AddContactTest" />
-        <item itemvalue="Application.MainClass" />
-        <item itemvalue="JUnit.All in ProjectAgentaVVSS" />
+        <item itemvalue="JUnit.TopDown" />
+        <item itemvalue="JUnit.BigBang" />
+        <item itemvalue="JUnit.BigBang.testF01" />
+        <item itemvalue="JUnit.IntegrationTest" />
+        <item itemvalue="JUnit.AfisActivityTest" />
       </list>
     </recent_temporary>
   </component>
@@ -428,49 +432,52 @@
       <workItem from="1554116284678" duration="1710000" />
       <workItem from="1555013996723" duration="2308000" />
       <workItem from="1555238880216" duration="4585000" />
+      <workItem from="1555325828995" duration="3281000" />
+      <workItem from="1557063964217" duration="595000" />
+      <workItem from="1557064750900" duration="7748000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddContactTest - 2019.04.01 at 14h 02m 41s.xml">
-      <configuration name="AddContactTest" configurationId="JUnit" />
+    <history-entry file="AfisActivityTest_testUnitValid - 2019.04.15 at 14h 50m 07s.xml">
+      <configuration name="AfisActivityTest.testUnitValid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddActivityTest - 2019.04.14 at 22h 38m 57s.xml">
-      <configuration name="AddActivityTest" configurationId="JUnit" />
+    <history-entry file="AfisActivityTest_testUnitValid - 2019.05.05 at 17h 13m 09s.xml">
+      <configuration name="AfisActivityTest.testUnitValid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddActivityTest_testWBT1 - 2019.04.15 at 00h 47m 36s.xml">
-      <configuration name="AddActivityTest.testWBT1" configurationId="JUnit" />
+    <history-entry file="AfisActivityTest_testUnitInvalid - 2019.05.05 at 17h 13m 14s.xml">
+      <configuration name="AfisActivityTest.testUnitInvalid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddActivityTest - 2019.04.15 at 00h 51m 31s.xml">
-      <configuration name="AddActivityTest" configurationId="JUnit" />
+    <history-entry file="AfisActivityTest - 2019.05.05 at 17h 17m 26s.xml">
+      <configuration name="AfisActivityTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddActivityTest - 2019.04.15 at 00h 52m 20s.xml">
-      <configuration name="AddActivityTest" configurationId="JUnit" />
+    <history-entry file="IntegrationTest - 2019.05.05 at 17h 20m 28s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddActivityTest - 2019.04.15 at 00h 54m 22s.xml">
-      <configuration name="AddActivityTest" configurationId="JUnit" />
+    <history-entry file="BigBang_testF01 - 2019.05.05 at 17h 25m 44s.xml">
+      <configuration name="BigBang.testF01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddActivityTest - 2019.04.15 at 00h 55m 12s.xml">
-      <configuration name="AddActivityTest" configurationId="JUnit" />
+    <history-entry file="BigBang - 2019.05.05 at 17h 28m 30s.xml">
+      <configuration name="BigBang" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddActivityTest - 2019.04.15 at 00h 55m 37s.xml">
-      <configuration name="AddActivityTest" configurationId="JUnit" />
+    <history-entry file="BigBang - 2019.05.05 at 17h 41m 58s.xml">
+      <configuration name="BigBang" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddActivityTest - 2019.04.15 at 00h 55m 44s.xml">
-      <configuration name="AddActivityTest" configurationId="JUnit" />
+    <history-entry file="TopDown - 2019.05.05 at 17h 44m 32s.xml">
+      <configuration name="TopDown" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddActivityTest - 2019.04.15 at 00h 58m 56s.xml">
-      <configuration name="AddActivityTest" configurationId="JUnit" />
+    <history-entry file="TopDown - 2019.05.05 at 18h 06m 53s.xml">
+      <configuration name="TopDown" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23419000" />
+    <option name="totallyTimeSpent" value="35043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25503355" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2657718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -487,19 +494,19 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
-      <window_info active="true" anchor="right" id="Coverage" sideWeight="0.5021097" side_tool="true" visible="true" weight="0.24966443" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.4978903" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" weight="0.3295302" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" weight="0.3295302" />
+      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.3295302" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.5021097" side_tool="true" weight="0.24966443" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,7 +517,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ProjectAgentaVVSS$AddActivityTest.ic" NAME="AddActivityTest Coverage Results" MODIFIED="1555279134925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ProjectAgentaVVSS$AddActivityTest.ic" NAME="AddActivityTest Coverage Results" MODIFIED="1555326450502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/window/MainWindow.java">
@@ -541,13 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/repository/interfaces/RepositoryActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/repository/interfaces/RepositoryUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -566,13 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AfisActivityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -641,56 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RandomString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding>
-            <element signature="e#1117#1118#0" expanded="true" />
-            <element signature="e#1163#1164#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1329#1330#0" expanded="true" />
-            <element signature="e#1409#1410#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/IntegrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="259" column="88" selection-start-line="259" selection-start-column="88" selection-end-line="259" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AddContactTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="86" column="79" selection-start-line="86" selection-start-column="79" selection-end-line="86" selection-end-column="79" />
-          <folding>
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/startApp/MainClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2584">
-          <caret line="170" column="64" selection-start-line="170" selection-start-column="64" selection-end-line="170" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryContactMock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -708,33 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/base/Contact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/contacts.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryContactFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/InvalidFormatException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -746,10 +662,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/base/Activity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/base/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="29" column="41" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="41" />
+        <state relative-caret-position="1224">
+          <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3587#3588#0" expanded="true" />
+            <element signature="e#3605#3606#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/startApp/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/repository/interfaces/RepositoryActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -758,20 +693,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryActivityFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="71" column="21" selection-start-line="53" selection-start-column="8" selection-end-line="71" selection-end-column="21" />
+        <state relative-caret-position="153">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2456#2457#0" expanded="true" />
-            <element signature="e#2487#2488#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AddActivityTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/RandomString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1887">
-          <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+        <state relative-caret-position="34">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -780,11 +713,106 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryActivityMock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="54" column="58" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
+        <state relative-caret-position="1513">
+          <caret line="100" column="51" selection-start-line="97" selection-start-column="8" selection-end-line="100" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/contacts.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/repository/classes/RepositoryContactFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/IntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AfisActivityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="140" column="9" lean-forward="true" selection-start-line="130" selection-start-column="8" selection-end-line="140" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/base/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BigBang.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="83" column="27" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TopDown.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="129" column="28" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddContactTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="109" column="29" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="29" />
+          <folding>
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddActivityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>

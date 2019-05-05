@@ -1,5 +1,3 @@
-import static org.junit.Assert.assertTrue;
-
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -19,6 +17,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import exceptions.InvalidFormatException;
+
+import static org.junit.Assert.*;
 
 public class IntegrationTest {
 
@@ -79,8 +79,14 @@ public class IntegrationTest {
 
 		c.set(2013, 3 - 1, 20);
 
-		List<Activity> result = repAct.activitiesOnDate("name1", c.getTime());
-		assertTrue(result.size() == 1);
+		List<Activity> result = null;
+		try {
+			result = repAct.activitiesOnDate("name1", c.getTime());
+		} catch (Exception e) {
+			fail();
+		}
+		assert result != null;
+		assertEquals(1, result.size());
 	}
 
 	@Test
@@ -100,7 +106,12 @@ public class IntegrationTest {
 		Calendar c = Calendar.getInstance();
 		c.set(2013, 3 - 1, 20);
 
-		List<Activity> result = repAct.activitiesOnDate("name1", c.getTime());
+		List<Activity> result = null;
+		try {
+			result = repAct.activitiesOnDate("name1", c.getTime());
+		} catch (Exception e) {
+			fail();
+		}
 		assertTrue(result.size() == 1 && result.get(0).equals(act));
 	}
 
@@ -122,9 +133,14 @@ public class IntegrationTest {
 			part1 = true;
 		}
 		Calendar c = Calendar.getInstance();
-		c.set(2013, 3 - 1, 20);
+		c.set(2013, Calendar.MARCH, 20);
 
-		List<Activity> result = repAct.activitiesOnDate("name1", c.getTime());
+		List<Activity> result = null;
+		try {
+			result = repAct.activitiesOnDate("name1", c.getTime());
+		} catch (Exception e) {
+			fail();
+		}
 		assertTrue(result.size() == 1 && result.get(0).equals(act) && part1);
 	}
 
@@ -179,7 +195,12 @@ public class IntegrationTest {
 		Calendar c = Calendar.getInstance();
 		c.set(2013, 3 - 1, 20);
 
-		List<Activity> result = repAct.activitiesOnDate("name1", c.getTime());
+		List<Activity> result = null;
+		try {
+			result = repAct.activitiesOnDate("name1", c.getTime());
+		} catch (Exception e) {
+			fail();
+		}
 		assertTrue(result.size() == 1 && result.get(0).equals(act) && part1
 				&& part2);
 	}
@@ -209,7 +230,12 @@ public class IntegrationTest {
 		Calendar c = Calendar.getInstance();
 		c.set(2013, 3 - 1, 20);
 
-		List<Activity> result = repAct.activitiesOnDate("name1", c.getTime());
+		List<Activity> result = null;
+		try {
+			result = repAct.activitiesOnDate("name1", c.getTime());
+		} catch (Exception e) {
+			fail();
+		}
 		assertTrue(result.size() == 1 && result.get(0).equals(act) && part1
 				&& part2);
 	}
@@ -244,9 +270,14 @@ public class IntegrationTest {
 		}
 
 		Calendar c = Calendar.getInstance();
-		c.set(2013, 3 - 1, 20);
+		c.set(2013, Calendar.MARCH, 20);
 
-		List<Activity> result = repAct.activitiesOnDate("name1", c.getTime());
+		List<Activity> result = null;
+		try {
+			result = repAct.activitiesOnDate("name1", c.getTime());
+		} catch (Exception e) {
+			fail();
+		}
 		assertTrue(result.size() == 1 && result.get(0).equals(act) && part1
 				&& part2);
 	}
